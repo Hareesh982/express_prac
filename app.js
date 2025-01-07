@@ -8,9 +8,9 @@ let port = 3000;
 // let seller = require('./seller.js')
 // let admin = require('./admin.js')
 
-// app.use(express.static(path.join(__dirname,'NewFolder')));
+app.use(express.static(path.join(__dirname,'NewFolder')));
 app.get('/',(req,res) =>{
-    res.sendFile(path.join(__dirname, 'NewFolder', 'customer.html'));
+    res.sendFile('customer.html');
 });
 // app.use('/customer',customer)
 // app.use('/seller',seller)
